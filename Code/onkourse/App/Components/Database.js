@@ -25,15 +25,13 @@ componentDidMount() {
       CRNurl: snapshot.val().CRN_url
     }
     if(snapshot.val().CRN == 28111) {
-      CRN.push(snapshot.val().CRN)
+      //CRN.push(snapshot.val().CRN)
       //console.warn(snapshot.val().CRN)
-      //console.warn(data[snapshot.val().CRN]);
+
     }
   });
   console.warn("before");
-  for (item in CRN){
-    console.warn(item);
-  }
+  console.warn(data[28111]);
 
 
 
@@ -48,7 +46,7 @@ componentWillUnmount(){
     return (
       <View style={styles.container}>
         <Text style = {{color: '#FFFFFF'}}>DatabaseComponent</Text>
-        <Text  style = {{color: '#FFFFFF'}}>  CRN {} </Text>
+        <Text  style = {{color: '#FFFFFF'}}>  CRN {console.warn(data[28111])} </Text>
       </View>
     )
   }

@@ -14,6 +14,8 @@ target 'onkourse' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
   target 'onkourseTests' do
     inherit! :search_paths
     # Pods for testing
