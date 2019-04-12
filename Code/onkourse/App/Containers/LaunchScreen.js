@@ -7,16 +7,21 @@ import { Images } from '../Themes'
 // Styles
 import styles from './Styles/LaunchScreenStyles'
 import Database from "../Components/Database";
+import Derek from "./Derek";
 
 export default class LaunchScreen extends Component {
 
   render () {
     return (
       <View style={styles.mainContainer}>
+
         <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+
+
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.launch} style={styles.logo} />
+            <Derek/>
           </View>
 
           <View style={styles.section} >
@@ -28,7 +33,6 @@ export default class LaunchScreen extends Component {
 
           <DevscreensButton />
 
-        <Database/>
         </ScrollView>
       </View>
     )

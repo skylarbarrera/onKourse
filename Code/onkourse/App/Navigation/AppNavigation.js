@@ -1,4 +1,5 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation'
+import Derek from '../Containers/Derek'
 import Loading from '../Containers/Loading'
 import ClassPage from '../Containers/ClassPage'
 import LoginScreen from '../Containers/LoginScreen'
@@ -12,6 +13,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
+  Derek: { screen: Derek },
   Loading: { screen: Loading },
   ClassPage: { screen: ClassPage },
   LoginScreen: { screen: LoginScreen },

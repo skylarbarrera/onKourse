@@ -15,9 +15,10 @@ class LoginScreen extends Component {
     return (
 
         <View style={styles.container}>
+          <Text style = {{color: '#000000', fontSize: 30, fontWeight: '400'}}>Welcome to OnKourse!</Text>
           <Image source ={require('../Images/onKourseLogo.png')} style= {{resizeMode: 'contain', maxHeight: '50%', maxWidth:'50%', alignSelf: 'center',}}>
           </Image>
-          <Text>Login</Text>
+
 
           <TextInput
             style={styles.textInput}
