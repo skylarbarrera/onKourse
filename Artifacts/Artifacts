@@ -1,0 +1,10 @@
+Download the project folders.
+Follow the steps on this website: https://medium.com/@randerson112358/setup-react-native-environment-for-ios-97bf7faadf77
+When successfully download the react native environment. Go to the onkourse/code/onkourse directory. Type on terminal "npm install".
+After "npm install", cd "IOS" and type "pod install".
+Then type "react-native run-ios" if you are macOS. If u have android, follow the instruction on the website: 
+https://medium.com/@randerson112358/setup-react-native-environment-for-ios-97bf7faadf77.
+
+Our demo provide users: login screen. Connected to firebase. Computer Science Course Page. Forum system. Create account and database authentication.
+
+We tried this on 3 computers. And they all work.
