@@ -7,7 +7,6 @@ import { connect } from 'react-redux'
 // Styles
 import styles from './Styles/DerekStyle'
 import StartupActions from "../Redux/StartupRedux";
-import PullClassData from "../Components/PullClassData";
 
 class Derek extends Component {
 
@@ -23,7 +22,7 @@ class Derek extends Component {
 
 
           {this.props.hasStartupFinished && <View>
-            <PullClassData/>
+
           </View>}
 
       </ScrollView>

@@ -23,7 +23,7 @@ class Loading extends Component {
   }
 
   switchScreens(){
-    this.props.navigation.navigate('ClassScreen')
+    this.props.navigation.navigate('Classes')
   }
   componentDidUpdate(){
     if(this.state.timer === 1){
@@ -38,15 +38,13 @@ class Loading extends Component {
   }
 
 
-
-
   render () {
     return (
 
+      <View style={{flex:1, paddingTop: '80%', alignItems: 'center'}}>
+        <ActivityIndicator size="large" color= "#000000"/>
+      </View>
 
-        <View style={{flex:1, paddingTop: '80%'}}>
-          <ActivityIndicator size="large"/>
-        </View>
 
 
 

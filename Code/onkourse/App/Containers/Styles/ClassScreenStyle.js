@@ -9,8 +9,10 @@ export default StyleSheet.create({
   },
 
     classInfoContainer:{
-      backgroundColor: Colors.charcoal,
-      minHeight: "30%"
+      backgroundColor: Colors.cloud,
+      minHeight: "40%",
+      borderBottomWidth: 2,
+      borderColor: '#000000'
 
     },
 

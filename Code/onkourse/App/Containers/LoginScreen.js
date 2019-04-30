@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Image,View, TextInput, Button, ScrollView, Text, KeyboardAvoidingView } from 'react-native'
 import { connect } from 'react-redux'
+import firebase from 'react-native-firebase'
 
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
@@ -11,6 +12,20 @@ import LoginButton from '../Components/LoginButton';
 
 class LoginScreen extends Component {
   state = { email: '', password: ''}
+
+  handleLogin = () => {
+    const { email, password } = this.state
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {this.props.navigation.navigate('Loading')
+
+
+      })
+
+      .catch(() => console.tron.log("username or password does not exist"))
+  }
+
   render() {
     return (
 
@@ -21,6 +36,7 @@ class LoginScreen extends Component {
 
 
           <TextInput
+
             style={styles.textInput}
             autoCapitalize="none"
             placeholder="Email"
@@ -39,14 +55,14 @@ class LoginScreen extends Component {
             title = "Login"
             text="Login"
             style = {{width:200}}
-            onPress={() => this.props.navigation.navigate('Loading')}
+            onPress={() => this.handleLogin()}
           />
 
           <LoginButton
             title = "Don't have an account? Sign Up"
             text="Don't have an account? Sign Up"
             style = {{width:200}}
-            onPress={() => this.props.navigation.navigate('OrderList')}
+            onPress={() => this.props.navigation.navigate('SignUp')}
           />
 
         </View>

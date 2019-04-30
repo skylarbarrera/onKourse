@@ -5,21 +5,18 @@ import { connect } from 'react-redux'
 // import YourActions from '../Redux/YourRedux'
 
 // Styles
-import styles from './Styles/ClassPageStyle'
-import firebase from "react-native-firebase";
+import styles from './Styles/UserSettingsStyle'
 
-class ClassPage extends Component {
+class UserSettings extends Component {
   // constructor (props) {
   //   super(props)
   //   this.state = {}
   // }
 
-
-
   render () {
     return (
       <ScrollView style={styles.container}>
-        <Text>ClassPage Container</Text>
+        <Text>UserSettings Container</Text>
       </ScrollView>
     )
   }
@@ -35,4 +32,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ClassPage)
+export default connect(mapStateToProps, mapDispatchToProps)(UserSettings)
